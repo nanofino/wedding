@@ -1,0 +1,124 @@
+@media screen
+		and (min-width: 481px)
+		and (max-width: 768px) {
+
+	.wrapper {
+		min-width: 481px;
+		width: auto;
+		max-width: 768px;
+	}
+
+	.landscapeTablet {
+		display: block;
+	}
+	
+	#intro #line00 h2 {
+		font-size: 40px;	
+	}
+	#intro h2 {
+		font-size: 24px;
+		
+	}
+	#mainDrawing {
+		padding: 0 20px;
+	}	
+		#mainDrawing img {
+			float: none;
+			margin-left: 0;
+		}
+
+		#mainDrawing h1 {
+			margin-top: 10px;
+			text-align: center;	
+			font-size: 72px;
+		}	
+		#mainDrawing .subtitle,
+		#mainDrawing .date {
+			text-align: center;	
+		}	
+	.hasMap .info {
+		min-width: 200px;
+		max-width: 350px;	
+		padding: 20px 20px;
+	}
+	.content {	
+		padding: 20px 20px;
+		
+	}
+	.content h2 {
+		font-size: 36px;
+	}
+	.content ul {
+		font-size: 0.9em;
+	}
+	.content ul li {
+		
+	}
+	.content ul li span {
+		font-size: 1.1em !important;
+	}
+	.content h3 {
+		font-size: 28px;				
+	}
+	.content p {
+		font-size: 16px;		
+	}
+	.details > p {
+		font-size: 16px;
+	}
+	.account {
+		font-size: 16px;
+	}
+	
+	nav.top-nav > a#header_logo {
+		text-align: left;
+		display: inline;
+	}
+	nav.top-nav > a#header_logo img {
+		width: 50px !important;
+		margin-left: 0 !important;
+		float: left;
+	}
+	nav.top-nav > a#header_logo h1 {	
+		font-size: 28px !important;
+		margin: 0 10px !important;
+		padding: 10px 0 0 !important;
+		display: block !important;
+	}
+	nav.top-nav > a.navLink {	
+		font-size: 18px !important;
+		margin: 5px 0 !important;
+		padding: 4px 0 0 !important;
+		width: 20% !important;
+		font-size: 16px !important;
+	}
+	nav.top-nav > a.navLink:hover {
+		font-size: 20px !important;
+	}
+
+	#movingCarBlock h3	{
+		font-size: 28px !important;
+	}
+
+
+	.columns  {
+		margin-top: 15px;
+	}
+
+
+	.columns .half {
+		width: auto;
+		float: none;
+		padding: 0px !important;
+		text-align: left;
+		border-left: 0 none;
+	}
+	.columns .half:first-child {
+		text-align: left;	
+		margin-bottom: 15px;
+	}
+	.account {
+		float: none;
+	}
+}
+

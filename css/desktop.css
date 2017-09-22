@@ -1,0 +1,12 @@
+@media (min-width: 961px) {
+	.wrapper {
+		position: relative;
+		width: auto;
+	}
+	h1 {
+/*		font-size: 120px;*/
+	}
+	.desktop {
+		display: block;
+	}
+}

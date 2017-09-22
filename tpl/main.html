@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="">
+
+		<link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+		<title>Dolo y Nano!</title>
+		<meta name="description" content="Hola{guestName}! somos Dolo y Nano. No {do} planes para el <strong>20 de Junio</strong>! queremos {inviteYou} a un evento muy especial, porque ese día...">
+		<link rel="image_src" href="./imgs/draw400.png" / >
+		
+		<!-- Bootstrap core CSS -->
+		<link href="libs/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<!-- Bootstrap theme -->
+		<link href="libs/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="css/styles.css" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Princess+Sofia|Oleo+Script+Swash+Caps|Simonetta:400,900,400italic,900italic|Slackey" rel="stylesheet" type="text/css">
+		<link href="css/portraitMobile.css" rel="stylesheet">
+		<link href="css/landscapeMobile.css" rel="stylesheet">
+		<link href="css/portraitTablet.css" rel="stylesheet">
+		<link href="css/landscapeTablet.css" rel="stylesheet">
+
+		<link href="css/desktop.css" rel="stylesheet">
+		<link href="css/fix.css" rel="stylesheet">
+		<link href="css/jquery.countdown.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="libs/jquery.countdown.js"></script>
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+
+	</head>
+	<body>
+		<header>
+			<nav class="top-nav">
+				<a id="header_logo" href="./">
+					<img src="./imgs/draw100.png">
+					<h1>Nos casamos!</h1>
+				</a>
+				<a class="navLink" href="#church">La Iglesia</a>
+				<!--BeginPartyLinkBlock--><a class="navLink" href="#party">La Fiesta!</a><!--EndPartyLinkBlock-->
+				<a class="navLink" href="#gifts">Regalos</a>
+				<a class="navLink" href="#questions">Dudas?</a>
+			</nav>
+		</header>
+
+		<div class="wrapper">
+			<div id="intro">
+				<div id="firstMessage">
+					<div id="line00">
+						<h2>Hola{guestName}!</h2>
+					</div>
+					<div id="line01">
+						<h2>somos Dolo y Nano.</h2>
+					</div>
+					<div id="line02">
+						<h2>no {do} planes para el <strong>20 de Junio</strong>!</h2>
+					</div>
+					<div id="line03">
+						<h2>queremos {inviteYou} a un evento muy especial, porque ese día...</h2>
+					</div>
+					<div id="goDown">Baj&aacute;!<br>&#9660;</div>
+				</div>
+				<div id="mainDrawing" class="clearfix">
+					<img src="./imgs/drawing.png">
+					<h1>Nos casamos!</h1>
+					<div class="subtitle">Y esperamos que nos {can} acompañar ese momento tan especial.</div>
+					<div class="date">La cita es el <strong>20 de Junio</strong> a las <strong>10.30hs.</strong> (si, de la mañana).</div>
+					<div id="note"></div>
+					<!--BeginConfirmationBlock-->
+					<div class="confirmAttendance">
+						<h3>{confirmAtt}</h3>
+						{FormBlock}
+					</div>
+					<!--EndConfirmationBlock-->
+				</div>
+			</div>
+			<div class="details" id="detailsAnchor">
+				<p>Más abajo {teLes} dejamos toda la información que {youNeed} para estar, cómo llegar, los regalos, y una forma rápida de contactarnos para lo que necesites.</p>
+				<!--<p>Más abajo {teLes} dejamos toda la información que {youNeed} para estar, cómo llegar desde donde {youAre} (si {youHave} un smartphone, {prende} el GPS), y una forma rápida de contactarnos para lo que necesites.</p>-->
+				<section id="church" class="clearfix">
+					<div class="content hasMap">
+						<div class="info">
+							<h2>La Iglesia</h2>
+							<ul>
+								<li>
+									<strong>Parroquia</strong>
+									<span>Asunción De La Santísima Virgen</span>
+								</li>
+								<li>
+									<strong>Dónde queda?</strong>
+									<span>Santa Fe 2982</span>
+									<p>Es la que está en la manzana del <strong>Hospital Materno Infantil</strong>.</p>
+								</li>
+								<li>
+									<strong>A qué hora es?</strong>
+									<span>10.30hs</span>
+									<p>Como la iglesia no es muy grande, si {wantBeSit} durante la ceremonia, {tryTo} de estar un rato antes.</p>
+								</li>
+							</ul>
+						</div>
+						<div class="map" id="map-church"></div>
+					</div>
+				</section>
+				<!--BeginPartyInfoBlock-->
+				<div id="movingCarBlock">
+					<h3>y de ahí, nos vamos a...</h3>
+					<div class="movingCar" id="movingCar1"></div>
+					<div class="movingCar" id="movingCar2"></div>
+					<div class="movingCar" id="movingCar3"></div>
+					<div class="movingCar" id="movingCar4"></div>
+					<div class="movingCar" id="movingCar5"></div>
+					<div class="movingCar" id="movingCar6"></div>
+					<div class="movingCar" id="movingCar7"></div>
+					<div class="movingCar" id="movingCar8"></div>
+				</div>
+				<section id="party" class="clearfix">
+					<div class="content hasMap">
+						<div class="info">
+							<h2>La Fiesta!</h2>
+							<ul>
+								<li>
+									<strong>El Salón</strong>
+									<span>El Recreo</span>
+								</li>
+								<li>
+									<strong>Dónde queda?</strong>
+									<span>Ruta 226 Km4</span>
+									<p>Queda a mano izquierda, por lo que hay que pasarse un poco. El mapa lleva hasta la rotonda, pero hay lugares para retomar antes.</p>
+								</li>
+							</ul>
+						</div>
+						<div class="map" id="map-party"></div>
+					</div>
+				</section>
+				<!--EndPartyInfoBlock-->
+				<section id="gifts" class="clearfix">
+					<div class="content">
+						<h2>Regalos</h2>
+						<p>Acompañarnos ese día es el mejor regalo que nos {can1} hacer. Si de todas maneras {want} regalarnos algo más, {youHave} dos maneras:</p>
+						<div class="columns">
+							<div class="half">
+								<h3>Caja de ahorros</h3>
+								<p>Como ya tenemos el departamento casi completo, preferimos dinero para hacerle algunos arreglos. Si {want}, {can1} hacer una transferencia bancaria a esta cuenta:</p>
+								<div class="account">
+									<strong>CBU - Banco HSBC</strong>
+									<span>1500651800065162309578</span>
+									<ul>
+										<li>
+											<strog>Nombre: </strog>
+											<span>Hernán Fino</span>
+										</li>
+										<li>
+											<strog>DNI: </strog>
+											<span>30.592.052</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="half">
+								<h3>Listas de Bodas</h3>
+								<p>Para los mas tradicionales, armamos una lista de regalos en un lugar que nos gusta mucho y que tiene la posibilidad de compra por teléfono o por mail.</p>
+<!--								<p>Armamos dos listas para que puedas elegir el lugar que mas te convenga.</p>-->
+								<div class="weddingList">
+									<a href="https://www.facebook.com/milkosa" target="_blank">
+										<img src="./imgs/milkosa.jpg" />
+										<h4>Milkosa Home</h4>
+										<p>Olavarría 2992<br />7600 Mar del Plata, Argentina</p>
+									</a>
+								</div>
+<!--
+								<div class="weddingList">
+									<h4>FAVA</h4>
+								</div>
+								-->
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="questions" class="clearfix">
+					<div class="content">
+						<h2>Dudas?</h2>
+						<p>Cualquier cosa que nos {wantTo} preguntar o comentar {contact} con alguno de nosotros:</p>
+						<div class="columns">
+							<div class="half">
+								<h3>Dolo</h3>
+								<a href="mailto:dolofino@gmail.com">dolofino@gmail.com</a><br />
+								<span>(0223) 15 513 9656</span>
+
+							</div>
+							<div class="half">
+								<h3>Nano</h3>
+								<a href="mailto:nanofino@gmail.com">nanofino@gmail.com</a><br />
+								<span>(0223) 15 528 4194</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="end">
+				<img src="./imgs/draw400.png" />
+				<h1>Dolo y Nano</h1>
+				<h2>20 de Junio de 2014</h2>
+			</div>
+		</div>
+		<script src="./libs/main.js"></script>
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+		<script src="./libs/fixed-header.js"></script>
+
+		<script> // Change UA-XXXXX-X to be your site's ID
+	//		window._gaq = [['_setAccount','UA-28895408-1'],['_trackPageview'],['_trackPageLoadTime']];
+	//		Modernizr.load({
+	//			load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+	//		});
+		</script>
+		<!--[if lt IE 7 ]>
+			<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+			<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+		<![endif]-->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-1368704-3', 'nanofino.com.ar');
+			ga('send', 'pageview');
+		</script>
+	</body>
+</html>

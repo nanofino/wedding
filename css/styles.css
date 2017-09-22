@@ -1,0 +1,651 @@
+body {
+	font-size: 16px;
+}
+.portraitMobile {
+	display: none;
+}
+.landscapeMobile {
+	display: none;
+}			 
+.portraitTablet {
+	display: none;
+}
+.landscapeTablet {
+	display: none;
+}
+.desktop {
+	display: none;
+}
+.test {
+	margin-top: 120px;	
+}
+
+body {
+	margin: 0;
+}
+.wrapper {
+	margin: 0;
+}
+.mainDrawing {
+	margin: 0;
+	display: block;	
+}
+	.mainDrawing img {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0;
+	}
+section {
+	margin: 0;
+	padding: 0 0 20px;
+}
+#church, #party {
+	padding: 0 0 0;
+}
+h1 {	
+	font-family: 'Princess Sofia';
+	font-size: 150px; 
+	color: #e5277f;
+}
+h2 {
+	font-family: 'Simonetta', serif;
+	margin-top: 0;
+	font-size: 54px;
+	color: #FFF;
+}
+
+nav.top-nav > a {
+	font-family: 'Slackey';
+	font-family: 'Oleo Script Swash Caps';
+
+}
+p {
+	font-family: 'Simonetta', serif;
+	
+}
+section {
+	font-family: 'Simonetta', serif;
+	font-size: 20px;
+}
+.content {
+	padding: 30px 30px;
+	color: #FFF;
+}
+
+.content.hasMap {
+	padding: 0;
+	position: relative;
+	color: #000;
+}
+	.hasMap .info {
+		color: #FFF;
+		width: 38%;
+		float: left;
+		position: absolute;
+		z-index: 100;
+		background-color: #bb5552;
+		background-color: rgba(187,85,82,0.75);
+		background-color: rgba(150,60,70,0.75);
+		top:20px;
+		left: 20px;
+		
+		top: 0;
+		left: 0;
+		bottom: 0;
+		
+		width: 38%;
+		min-width: 450px;
+		max-width: 600px;
+/*		height: 460px;*/
+		padding: 30px 30px;
+	}
+/*
+	.info {
+		text-shadow: 0 0 6px #100,  0 0 2px #000;
+	}
+	*/
+	.map {
+		height: 500px;
+		margin: 0px;
+		padding: 0px;
+		border: 0 none;
+		
+		border-radius: 5px;
+	}
+	.map strong.title {
+		font-size: 1.2em;
+		line-height: 1.2;
+		margin-bottom: 0.4em;
+		font-weight: normal;
+		display: block
+	}
+
+.content h2 {
+}
+
+.content ul {
+	margin: 1em 0 0;
+	padding: 0;
+	list-style-type: none;
+}
+	.content li {
+		margin: 1em 0;
+		padding: 0;
+		font-size: 1em;
+	}
+		.content li strong {
+			font-weight: normal;
+			display: block;
+		}
+		.content li span {
+			font-size: 1.5em;
+			display: block;
+			font-weight: bold;
+		}
+		.content li p {
+			font-size: 0.8em;
+		}
+			.content li p strong {
+				font-weight: bold;
+				display: inline;
+			}
+
+#intro{
+}
+
+	#firstMessage {
+		background-color: #00c951;
+		position: relative	
+	}
+		#firstMessage > div {
+			opacity: 0;
+			text-align: center;
+			margin: 0 30px 15px;
+		}
+		#firstMessage > div:first-child {
+			opacity: 1;
+		}
+#mainDrawing {
+	padding-left: 50%;
+	padding-right: 40px;
+}
+
+#mainDrawing img {
+	float: left;
+	margin-left: -100%;
+	width: 100%;
+}
+#mainDrawing h1 {
+	margin-top: 80px;
+	font-size: 120px;
+	font-size: 100px;
+}
+.subtitle {
+	font-family: 'Simonetta', serif;
+	font-size: 20px;
+}
+
+h3 {
+	font-family: 'Simonetta', serif;	
+	font-size: 36px;
+}
+.confirmAttendance {
+	overflow:auto;
+	/*
+	border-color: #72eea4;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 25px;
+	*/
+	padding: 15px 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.confirmAttendance h3 {
+	margin-top: 0;
+	font-size: 24px;
+/*	font-family: 'Oleo Script Swash Caps';	*/
+}
+.confirmAttendance h4 {
+	margin-top: 0;
+	font-family: 'Oleo Script Swash Caps';	
+	font-size: 2em;
+	color: #e5277f;
+}
+.confirmAttendance h4.noGo {
+	color: #1c5362;
+}
+
+#tryAgain {
+	font-family: 'Simonetta', serif;
+	font-size: 0.8em;
+	font-style: italic;
+}
+#line00 h2 {
+	font-size: 5em;
+}
+#line00 h2,
+.details h2 {
+	font-family: 'Oleo Script Swash Caps';
+}
+/* --------------------------- SECTIONS --------------------------- */
+/*
+<section id="church">
+	<h2>La Iglesia</h2>
+	<div class="content">
+		<div class="map" id="map-church"></div>
+	</div>
+</section>
+<section id="party">
+	<h2>La Fiesta!</h2>
+	<div class="content">
+		<div class="map" id="map-party"></div>
+	</div>
+</section>
+<section id="gifts">
+	<h2>Regalos</h2>
+	<div class="content">
+		adfdds
+	</div>
+</section>
+<section id="questions">
+*/
+h1, .date, .subtitle {
+	text-align: center;
+}
+#church {
+	background-color: #0086aa; 	
+	background-color: #80c3d5; 	
+	background-color: #a3e8fb; 	
+
+}
+#party {
+	background-color: #bb5552; 	
+	background-color: #ddaaa9; 	
+}
+#gifts {
+	background-color: #c89e70; 	
+	background-color: #80a6b1; 	
+}
+#questions {
+	background-color: #1c5362; 	
+}
+
+#movingCarBlock {
+	background-color: #FFF;
+	background-color: #84dbd7;
+	background-image: url('../imgs/city.png');
+	background-position: center bottom;
+	background-repeat: repeat-x;
+	height: 275px;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+#movingCarBlock h3 {	
+	color: #FFF;
+	padding: 0 30px;
+	text-shadow: 0px 0px 4px #000;
+}
+
+	.movingCar {
+		position: absolute;
+		left: -80px;
+		top: 205px;
+		height: 53px;
+		width: 92px;
+		background-position: center bottom;
+		background-repeat: no-repeat;
+	}
+	#movingCar1 {
+		background-image: url('../imgs/car01.png');
+	}
+	#movingCar2 {
+		background-image: url('../imgs/car02.png');
+	}
+	#movingCar3 {
+		background-image: url('../imgs/car03.png');
+	}
+	#movingCar4 {
+		background-image: url('../imgs/car04.png');
+	}
+	#movingCar5 {
+		background-image: url('../imgs/car05.png');
+	}
+	#movingCar6 {
+		background-image: url('../imgs/car06.png');
+	}
+	#movingCar7 {
+		background-image: url('../imgs/car07.png');
+	}
+	#movingCar8 {
+		background-image: url('../imgs/car08.png');
+	}
+	
+	
+	
+	
+	
+	
+div#goDown{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin: 0 0 0 -25px;
+	width: 50px;
+	height: 50px;
+	background-color: #FFF;
+
+	color: #00c951;
+	opacity: 1 !important;
+	text-align: center;
+	border-radius: 50px;
+	line-height: 50px;
+	/*
+	-webkit-transition: opacity 1s ease-in-out;
+	   -moz-transition: opacity 1s ease-in-out;
+	    -ms-transition: opacity 1s ease-in-out;
+		 -o-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;	
+	*/
+	color: #FFF;
+	background-color: transparent;
+	line-height: 1.5;
+}
+
+/* animatioms */
+@-webkit-keyframes blink {
+    0% {
+        opacity:0.75;
+    }
+    50% {
+        opacity:0.5;
+    }
+    100% {
+        opacity:0.75;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity:0.75;
+    }
+    50% {
+        opacity:0.5;
+    }
+    100% {
+        opacity:0.75;
+    }
+}
+
+#goDown {
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	-webkit-animation-direction: normal;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-name: blink;
+	-webkit-animation-timing-function: ease-in-out;
+	-moz-animation-direction: normal;
+	-moz-animation-duration: 1s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-name: blink;
+	-moz-animation-timing-function: ease-in-out;
+}
+
+form button {
+	width: 48%;
+	margin: 0;
+	border: 0 none;
+	color: #FFF;
+	font-family: 'Oleo Script Swash Caps';
+	font-family: 'Slackey';
+	/*
+	font-family: 'Princess Sofia';
+	font-family: 'Simonetta', serif;
+	*/
+	font-weight: normal;
+	padding: 30px;
+	padding: 20px;
+	border-radius: 10px;
+	font-size: 24px;
+	font-size: 18px;
+}
+
+form button.yesIGo {
+	background-color: #00c951;
+}
+form button.noICant {
+	background-color: #ba5552;	
+}
+
+form button:first-child {
+	margin-right: 3%;
+}
+#tryAgainBlock button {
+	width: auto;
+	margin-right: 0;
+}
+.details > p {
+	background-color: #0cb5d2;
+	color: #FFF;
+	margin: 0;
+	padding: 20px;
+	font-size: 20px;
+}
+
+
+/*------------------------------*/
+.weddingList {
+	clear:both;
+	overflow: hidden;
+}
+
+.weddingList a {
+	padding: 10px 10px 10px 145px;
+	color: #FFF;
+	display: block;
+	background-color: rgba(0,0,0,.05);
+	position: relative;
+	min-height: 129px;
+}
+.weddingList a:hover {
+	background-color: rgba(0,0,0,.25);
+}
+
+.weddingList a img {
+	float: left;
+	margin: 0 15px 0 0;
+	border: 5px solid #FFF;
+	width: 120px;
+	position: absolute;
+	top:10px;
+	left: 10px;
+}
+.weddingList a h4 {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin: 0 0 0.70em;
+}
+.weddingList a p {
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+
+
+/*-------------------*/
+.columns {
+	margin-top: 2em;
+	
+}
+.columns h3 {
+	margin-top: 0;
+}
+.columns .half {
+	padding: 0 30px;
+	width: 50%;
+	float: left;
+	border-left: 1px solid rgba(255,255,255,0.20);
+	text-align: left;
+}
+.columns .half:first-child {
+	padding-left: 0;
+	border-left: 0 none;
+}
+
+.columns .half:first-child {
+	text-align: right;
+}
+
+.columns .half a {
+	color: #FFF;
+}
+
+.columns .half a:hover {
+	text-decoration: underline;
+}
+
+
+.account {
+	border: 1px solid rgba(255,255,255,.5);
+	float: right;
+	border-radius: 5px;
+	padding: 10px 20px;
+	text-align: left;	
+}
+	.account > strong {
+		font-size: 0.75em;
+	}
+	.account > span {
+		font-size: 1.4em;
+		font-size: 1.8em;
+		display: block;		
+
+	}
+	.account ul {
+		font-size: 0.75em;
+		text-align: center;		
+		margin: 8px 0 0;
+	}
+		.account ul li {
+			white-space: nowrap;
+			display: inline-block;
+			margin-right: 1em;			
+			margin: 0 8px 0;
+		}
+			.account ul li strong {
+				display: inline;
+			}
+			.account ul li span {
+				display: inline;
+			}
+
+
+
+
+/*-------------------------------*/
+.date {
+	font-family: 'Simonetta', serif;
+	font-size: 1.3em;	
+}
+.date strong {color:  rgb(150,60,70)}
+
+#note {
+	display: block;
+	vertical-align: middle;
+	font-family: 'Simonetta', serif;
+	margin: 10px 0 20px;
+	text-align: center;
+	font-style: italic;
+}
+#note h3 {
+	display: inline-block;
+	font-size: 1.3em;
+	vertical-align: top;
+	margin: 27px 0 23px;
+	opacity: 0.5;
+}
+#note div {
+	display: inline-block;
+}
+#note span {
+	box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+	min-width: 85px;
+	float: left;
+	border: 1px solid #999;
+	border-top: 5px solid #999;
+	line-height: 10px;
+	margin: 0 0 0 10px;
+	padding: 10px;
+	text-align: center;
+}
+#note span strong {
+	font-style: normal;
+	line-height: 32px;	
+	font-size: 32px;
+	display: block;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+.end {
+	padding: 50px 0;
+	opacity: 0.15;
+	text-align: center;
+	
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-animation-direction: normal;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: hovering;
+    -webkit-animation-timing-function: ease;
+	-moz-animation-direction: normal;
+    -moz-animation-duration: 0.5s;
+/*
+    -webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+*/
+    -moz-animation-name: hovering;
+    -moz-animation-timing-function: ease;    
+	
+}
+
+	.end h1 {
+		font-size: 60px;
+	}
+	.end h2 {
+		font-size: 28px;
+		color: #1c5362;
+		font-style: italic;
+	}
+.end:hover {
+	opacity: 1;
+}
+/* animatioms */
+@-webkit-keyframes hovering {
+    0% {
+        opacity:0.15;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-moz-keyframes hovering {
+    0% {
+        opacity:0.15;
+    }
+    100% {
+        opacity:1;
+    }
+}

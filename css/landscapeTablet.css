@@ -1,0 +1,76 @@
+@media screen
+		and (min-width: 769px) 
+		and (max-width: 960px) {
+	.wrapper {
+		min-width: 768px;
+		width: auto;
+		max-width: 960px;
+	}
+
+	.landscapeTablet {
+		display: block;
+	}
+	
+	
+	#mainDrawing {
+		padding: 0 40px;
+	}	
+		#mainDrawing img {
+			float: none;
+			margin-left: 0;
+		}
+
+		#mainDrawing h1 {
+			margin-top: 10px;
+			text-align: center;	
+		}	
+		#mainDrawing .subtitle,
+		#mainDrawing .date {
+			text-align: center;	
+		}	
+	.hasMap .info {
+		min-width: 300px;
+		max-width: 450px;	
+	}
+	.content h2 {
+		font-size: 36px;
+	}
+	.content ul {
+		font-size: 0.9em;
+	}
+	.content ul li {
+		
+	}
+	.content ul li span {
+		
+	}
+	.content h3 {
+		font-size: 28px;				
+	}
+	.content p {
+		font-size: 16px;		
+	}
+	.details > p {
+		font-size: 16px;
+	}
+	.account {
+		font-size: 16px;
+	}
+	
+	nav.top-nav > a#header_logo img {
+		width: 80px !important;
+		margin-left: 0 !important;
+	}
+	nav.top-nav > a#header_logo h1 {	
+		font-size: 28px !important;
+		margin: 0 10px !important;
+	}
+	nav.top-nav > a.navLink {	
+		font-size: 18px !important;
+	}
+	nav.top-nav > a.navLink:hover {
+		font-size: 22px !important;
+	}
+}
+
+

@@ -1,0 +1,156 @@
+					<!--BeginFormToCompleteBlock-->
+						<div id="confirmationFormBlock">
+							<p>Es muy importante que nos {confirmAtt1} o no, asique te la hacemos fácil:</p>
+							<form id="confirmationForm" action="confirmation.php" method="post">
+								<input type="hidden" name="guestCode" value="{guestCode}" />
+								<input type="hidden" name="answer" value="" id="answerValue"/>
+								<div class="formToComplete">
+									<button value="yes" class="yesIGo">Si, claro que {go}!</button>
+									<button value="no" class="noICant">Uy, no {Ican} ir!</button>
+								</div>
+							</form>
+						</div>
+						<script>
+						$(document).ready(function(){
+							$(".formToComplete button").click(function(e){
+								e.preventDefault(); //STOP default action
+								$('#answerValue').val($(this).val());
+								$("#confirmationForm").submit();
+							});
+							$("#confirmationForm").submit(function(e){
+								var formAction = $(this).attr('action');
+								var formMethod = $(this).attr('method');
+								var formData = $(this).serializeArray();
+								var formLoading = $('#formLoading');
+								var formError = $('#formError');
+								var confirmationFormBlock = $('#confirmationFormBlock');
+								confirmationFormBlock.hide();
+								formLoading.show();
+								
+								$.ajax({
+									url: formAction,
+									type: formMethod,
+						        	data :  formData,
+									success:function(data, textStatus, jqXHR) {
+										confirmationFormBlock.html(jqXHR.responseText).show();
+										formError.hide();
+										formLoading.hide();	
+									},
+									error: function(jqXHR, textStatus, errorThrown) {
+										formError.show();
+										formLoading.hide();
+									}
+								});
+									
+								e.preventDefault(); //STOP default action
+								//e.unbind(); //unbind. to stop multiple form submit.
+							});
+						});
+						</script>
+					<!--EndFormToCompleteBlock-->
+					<!--BeginAnswerYesBlock-->
+						<div id="changeYes">
+							<h4>¡Que bueno que {youCome}!</h4>
+							<p><strong>{teLos} esperamos</strong> el 20 de Junio, abajo {youHave} toda la información.</p>
+							<a href="#" id="tryAgain">{change} de idea?</a>
+							<form id="changeToNoForm" action="confirmation.php" method="post">
+								<input type="hidden" name="guestCode" value="{guestCode}" />							
+								<input type="hidden" name="answer" value="no" />
+								<span id="tryAgainBlock" style="display: none">
+									<button type="submit" class="noICant">Em... al final {Ican} ir...</button>
+								</span>
+							</form>
+							<script>
+								$(document).ready(function(){
+//									alert($('#tryAgain').html());
+									$('#tryAgain').click(function(){
+										$('#tryAgainBlock').show();
+										$(this).hide();
+										return false;
+									});
+
+									$("#changeToNoForm").submit(function(e){
+										var formAction = $(this).attr('action');
+										var formMethod = $(this).attr('method');
+										var formData = $(this).serializeArray();
+										var formLoading = $('#formLoading');
+										var formError = $('#formError');
+										var confirmationFormBlock = $('#changeYes');
+										
+										confirmationFormBlock.hide();
+										formLoading.show();
+
+										$.ajax({
+											url: formAction,
+											type: formMethod,
+								        	data :  formData,
+											success:function(data, textStatus, jqXHR) {
+												confirmationFormBlock.html(jqXHR.responseText).show();
+												formError.hide();
+												formLoading.hide();	
+											},
+											error: function(jqXHR, textStatus, errorThrown) {
+												formError.show();
+												formLoading.hide();
+											}
+										});
+											
+										e.preventDefault(); //STOP default action
+										//e.unbind(); //unbind. to stop multiple form submit.
+									});									
+								});
+							</script>
+						</div>
+					<!--EndAnswerYesBlock-->
+					<!--BeginAnswerNoBlock-->
+						<div id="changeNo">
+							<h4 class="noGo">¡Que bajón!</h4>
+							<p><strong>Se {teLos} va a extrañar!</strong> igualmente {vanVas} a estar presente con nosotros!</p>
+							<form id="changeToYesForm" action="confirmation.php" method="post">
+								<input type="hidden" name="guestCode" value="{guestCode}" />
+								<input type="hidden" name="answer" value="yes" />
+								<button id="changetoYes" name="changetoNo" class="yesIGo">Al final, si {go}!</button>
+							</form>
+							<script>
+								$(document).ready(function(){
+
+									$("#changeToYesForm").submit(function(e){
+										var formAction = $(this).attr('action');
+										var formMethod = $(this).attr('method');
+										var formData = $(this).serializeArray();
+										var formLoading = $('#formLoading');
+										var formError = $('#formError');
+										var confirmationFormBlock = $('#changeNo');
+										
+										confirmationFormBlock.hide();
+										formLoading.show();
+
+										$.ajax({
+											url: formAction,
+											type: formMethod,
+								        	data :  formData,
+											success:function(data, textStatus, jqXHR) {
+												confirmationFormBlock.html(jqXHR.responseText).show();
+												formError.hide();
+												formLoading.hide();	
+											},
+											error: function(jqXHR, textStatus, errorThrown) {
+												formError.show();
+												formLoading.hide();
+											}
+										});
+											
+										e.preventDefault(); //STOP default action
+										//e.unbind(); //unbind. to stop multiple form submit.
+									});									
+								});
+							</script>
+						</div>
+					<!--EndAnswerNoBlock-->
+
+						<div id="formLoading" class="loading" style="display: none;">Esperá un toque que anotamos tu respuesta...</div>
+						<div id="formError" class="error" style="display: none;">
+							<h4>Upss... esto no anda bien...</h4>
+							<p>Nano hizo algo mal, como siempre. Fijate si podes intentar nuevamente mas tarde, sino mandanos un mail a <a href="mailto:nanofino@gmail.com">nanofino@gmail.com</a></p>
+							<a id="tryAgain" href="#">A ver, probemos de nuevo...</a>
+						</div>
